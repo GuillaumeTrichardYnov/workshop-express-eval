@@ -4,7 +4,8 @@ var express = require('express');
 const app = require('./src/app');
 
 // port
-const port = 3000;
+const port = app.listen(process.argv[2]);
+
 app.listen(port);
 // start server here
 console.log(chalk.green('Hello web server'));
